@@ -26,6 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'twitter-bootstrap-rails', '~> 3.2.0'
 gem 'font-awesome-rails', '~> 4.4.0.0'
 gem 'simple_form', '~> 3.1.1'
+gem 'devise', '~> 3.5.2'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

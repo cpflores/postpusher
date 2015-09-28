@@ -1,4 +1,6 @@
 class ConnectionsController < ApplicationController
+  before_filter :set_connection, only: [:destroy]
+
   def create
   	connection = current_user.connections.create_from_omniauth(auth_hash)
   	if connection.save
@@ -9,9 +11,14 @@ class ConnectionsController < ApplicationController
   end
 
   def destroy
+  	@connection.destroy
   end
 
   private
+
+  def set_connection
+  	@connection = Connection.find(params[:id])
+  end
 
   def auth_hash
   	request.env['omniauth.auth']

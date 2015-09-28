@@ -12,6 +12,7 @@ class ConnectionsController < ApplicationController
 
   def destroy
   	@connection.destroy
+    redirect_to dashboard_path, notice: "Connection deleted"
   end
 
   private

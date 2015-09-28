@@ -29,6 +29,7 @@ gem 'simple_form', '~> 3.1.1'
 gem 'devise', '~> 3.5.2'
 gem 'omniauth', '~> 1.2.2'
 gem 'omniauth-twitter', '~> 1.2.1'
+gem 'dotenv-rails', '~> 2.0.2'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -51,7 +52,6 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'sqlite3'
-  gem 'dotenv-rails', '~> 2.0.2'
 end
 
 group :production do

@@ -29,6 +29,7 @@ gem 'simple_form', '~> 3.1.1'
 gem 'devise', '~> 3.5.2'
 gem 'omniauth', '~> 1.2.2'
 gem 'omniauth-twitter', '~> 1.2.1'
+gem 'omniauth-facebook', '~> 2.0.1'
 
 gem 'dotenv-rails', '~> 2.0.2'
 

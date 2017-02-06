@@ -3,11 +3,13 @@
 	<div class="col-md-2 text-center">
 		<%= image_tag "Quest_Visual_logo.png", class: "logo" %>
 		<hr>
+
 		<div class="timezone">
 			<p class="text-center"><b><%= Time.zone.name %> Timezone</b></p>
 			<%= link_to "change", edit_user_registration_path %>
 		</div>
 		<hr>
+
 		<div class="social">
 			<% unless current_user.connections.where(provider: "twitter").any? %>
 				<%= link_to "Connect with Twitter", "/auth/twitter", class: "btn btn-info btn-block btn-sm" %>
@@ -27,11 +29,11 @@
 
 	<!-- New Post and Scheduled -->
 	<div class="col-md-5">
-		<h3 class="text-center">Scheduled Posts</h3>
+		<h3 class="text-center">Scheduled</h3>
 	</div>
 
 	<!-- History -->
 	<div class="col-md-5">
-		<h3 class="text-center">Post History</h3>
+		<h3 class="text-center">History</h3>
 	</div>
 </div>

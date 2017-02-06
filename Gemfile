@@ -27,7 +27,7 @@ gem 'twitter-bootstrap-rails', '~> 3.2.0'
 gem 'font-awesome-rails', '~> 4.4.0.0'
 gem 'simple_form', '~> 3.1.1'
 gem 'devise', '~> 3.5.2'
-gem 'omniauth', '~> 1.2.2'
+
 gem 'omniauth-twitter', '~> 1.2.1'
 gem 'omniauth-facebook', '~> 2.0.1'
 
@@ -60,4 +60,3 @@ group :production do
 	gem 'pg'
 	gem 'rails_12factor'
 end
-

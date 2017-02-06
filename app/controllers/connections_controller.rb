@@ -21,11 +21,11 @@ class ConnectionsController < ApplicationController
 
   private
 
-  def set_connection
-  	@connection = Connection.find(params[:id])
-  end
-
   def auth_hash
   	request.env['omniauth.auth']
+  end
+
+  def set_connection
+    @connection = Connection.find(params[:id])
   end
 end

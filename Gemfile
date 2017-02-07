@@ -34,6 +34,9 @@ gem 'omniauth-facebook', '~> 2.0.1'
 gem 'dotenv-rails', '~> 2.0.2'
 gem 'validates_timeliness', '~> 4.0', '>= 4.0.2'
 
+gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
+gem 'momentjs-rails', '~> 2.9',  :github => 'derekprior/momentjs-rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
